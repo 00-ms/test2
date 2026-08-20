@@ -18,9 +18,8 @@ cd test2
 npm install
 
 cp .env.example .env
-```
-
 # edit .env if you want a custom prefix, sticker pack name, or pairing-code login
+```
 
 `sharp` and `node-webpmux` are native modules — if `npm install` fails on `sharp`,
 run `pkg install libvips` first, then retry.
