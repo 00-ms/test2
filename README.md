@@ -1,4 +1,4 @@
-# wa-roblox-bot
+# test2
 
 A WhatsApp bot (via [Baileys](https://github.com/WhiskeySockets/Baileys)) with:
 
@@ -13,13 +13,14 @@ A WhatsApp bot (via [Baileys](https://github.com/WhiskeySockets/Baileys)) with:
 pkg update && pkg upgrade -y
 pkg install nodejs-lts git ffmpeg -y
 
-git clone <your-repo-url> wa-roblox-bot
-cd wa-roblox-bot
+git clone https://github.com/00-ms/test2.git
+cd test2
 npm install
 
 cp .env.example .env
-# edit .env if you want a custom prefix, sticker pack name, or pairing-code login
 ```
+
+# edit .env if you want a custom prefix, sticker pack name, or pairing-code login
 
 `sharp` and `node-webpmux` are native modules — if `npm install` fails on `sharp`,
 run `pkg install libvips` first, then retry.
@@ -52,9 +53,9 @@ For a persistent daemon, consider `tmux` or `screen`:
 
 ```bash
 pkg install tmux
-tmux new -s wabot
+tmux new -s test
 npm start
-# detach with Ctrl+B then D; reattach later with: tmux attach -t wabot
+# detach with Ctrl+B then D; reattach later with: tmux attach -t test
 ```
 
 ## Notes / limitations
@@ -74,7 +75,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin <your-repo-url>
+git remote add origin https://github.com/00-ms/test2.git
 git push -u origin main
 ```
 
